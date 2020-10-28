@@ -1,0 +1,147 @@
+{
+    "domains": [
+        {
+            
+            "domainId": "1000",
+            "domainName": "OneApp Default",
+            "version": 1,
+            "isDefault": true,
+                
+            "color.options": {
+                "primary":"#1DBE00",
+                "secondary":"#157EFB"
+            },
+                
+            "color.options.text": {
+                "primary":"#FFFFFF",
+                "secondary":"#FFFFFF"
+             },
+                
+            "rule.navigationbar": {
+                "color.option":"primary",
+                "background.color": "#F5F5F5",
+                "text.color": "#666666",
+                "image.color": {
+                    "normal": "#FB371D",
+                    "selected": "#FB371D"
+                },
+            },
+                
+            "rule.navigationbar.line": {
+                "color.option":"primary",
+                "background.color": "#1DBE00"
+            },
+            
+            "rule.tabbar": {
+                "background.color": "#FFFFFF",
+                "image.color": {
+                    "normal": "#999999",
+                    "selected": "#222222"
+                },
+           },
+
+            "rule.segmentview": {
+                "color.option":"primary",
+                "text.color": "#FFFFFF",
+                "background.color": "#F5F5F5",
+            },
+
+            "rule.event.views": {
+                "color.option":"secondary",
+                "background.color": "#FB371D",
+                "text.color": "#666666",
+                "image.color": {
+                    "normal": "#FB371D",
+                    "selected": "#FB371D"
+                },
+            },
+
+            "rule.toast.notification.view": {
+                "background.color": "#000000",
+                "text.color": "#FFFFFF",
+                "image.color": "#FFFFFF",
+                "text.font": {
+                    "normal":11,
+                    "bold":13
+                },
+            },
+
+            "rule.common": {
+                "text.color": "#666666",
+                "background.color": "#FFFFFF"
+            }
+
+        },
+        {
+            "domainId": "1100",
+            "domainName": "SEVER COLOR",
+            "version": 1,
+            "isDefault": false,
+
+            "color.options": {
+                "primary":"#1DBE00",
+                "secondary":"#157EFB"
+            },
+                
+            "color.options.text": {
+                "primary":"#FFFFFF",
+                "secondary":"#FFFFFF"
+             },
+                
+            "rule.navigationbar": {
+                "color.option":"primary",
+                "background.color": "#F5F5F5",
+                "text.color": "#666666",
+                "image.color": {
+                    "normal": "#FB371D",
+                    "selected": "#FB371D"
+                },
+            },
+                
+            "rule.navigationbar.line": {
+                "color.option":"primary",
+                "background.color": "#F5F5F5"
+            },
+            
+            "rule.tabbar": {
+                "background.color": "#FFFFFF",
+                "image.color": {
+                    "normal": "#999999",
+                    "selected": "#222222"
+                },
+           },
+
+            "rule.segmentview": {
+                "color.option":"primary",
+                "text.color": "#FFFFFF",
+                "background.color": "#F5F5F5",
+            },
+
+            "rule.event.views": {
+                "color.option":"secondary",
+                "background.color": "#FB371D",
+                "text.color": "#666666",
+                "image.color": {
+                    "normal": "#FB371D",
+                    "selected": "#FB371D"
+                },
+            },
+
+            "rule.toast.notification.view": {
+                "background.color": "#000000",
+                "text.color": "#FFFFFF",
+                "image.color": "#FFFFFF",
+                "text.font": {
+                    "normal":11,
+                    "bold":13
+                },
+            },
+
+            "rule.common": {
+                "text.color": "#666666",
+                "background.color": "#FFFFFF"
+            }
+
+        }
+    ]
+}

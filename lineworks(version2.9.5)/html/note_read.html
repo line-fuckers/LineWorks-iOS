@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <style>
+            
+        body {
+            -webkit-text-size-adjust: <1@*(size)*@1>%;
+            /*-webkit-user-select: none;*/
+            /*-webkit-touch-callout: none;*/
+        }
+        
+        body,span,div, p {
+            word-break: break-word;
+            word-wrap: break-word;
+            line-height : 160%;
+        }
+        
+        body, button, fieldset, form, input, legend, menu, p, select, table, td, textarea, th {
+            margin : 0;
+            padding : 0;
+        }
+        
+        table {
+            font-size: 14px;
+        }
+        
+        .contentBody {
+            font-size:10pt;
+            font-family:'Helvetica Neue';
+            color:#3C3C3C;
+            margin-top:20px;
+            margin-left:15px;
+            margin-right:15px;
+        }
+        
+        img { max-width: 100%; }
+        
+        <!--externalCSS-->
+        
+        </style>
+        <script type="text/javascript">
+            
+            
+            // Selection을 없애서 복사를 못하도록 한다.
+            function blockCopy() {
+                document.addEventListener("selectionchange", function() {
+                                          console.log('Selection changed.');
+                                          
+                                          var sel = window.getSelection();
+                                          if (sel.rangeCount == 0) {
+                                          return;
+                                          }
+                                          
+                                          sel.removeAllRanges();
+                                          });
+            }
+        
+        </script>
+        <meta name="viewport" id="meta-viewport" content="<1@*(viewport)*@1>"/>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+        <!--externalJavaScript-->
+    </head>
+    <body class="contentBody" id="contentBody" onload="initReadView();">
+        <div id="readContent">
+            <!--body-->
+        </div>
+    </body>
+    
+    <!--datadetector-->
+    
+    <!--blockCopy-->
+</html>

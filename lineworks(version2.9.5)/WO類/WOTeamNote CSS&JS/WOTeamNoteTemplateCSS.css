@@ -1,0 +1,11 @@
+[data-workseditor^='WorksTemplate.'] a {
+    display: inline !important;
+}
+
+/* 쓰기모드 > 템플릿 a 클릭 방지 (수정버튼 제외) */
+[data-workseditor^='WorksTemplate.'] a.text_mode {
+    color: #222;
+    text-decoration: none;
+    cursor: default;
+    pointer-events: none;
+}

@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>테스트 페이지</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<script type="text/javascript">
+
+/*
+function webViewDidFinishLoad() {
+    // 앱에서 웹페이지에 로드가 완료된 시점을 명시적으로 알려주는 경우
+    request();
+}
+*/
+
+function viewDidLoad() {
+    // 웹페이지 로드에서 호출하는 경우
+    // 인터페이스가 정상적으로 생성되어 있지 않기 때문에 지연 호출을 하여야 한다.
+    setTimeout(function() { request(); }, 100);
+}
+
+function request() {
+    oneapp.requestFeatures('hardwareBackKey, toolbarClose');
+}
+
+function toolbarCloseButtonPressed() {
+    
+    oneapp.interceptOnToolbarClosePressed(true)
+    
+    // oneapp object를 호출한 뒤, 바로 다음 메소드를 호출할 경우
+    // 앱 전체가 프리징 되는 현상이 있어서 수정, 시뮬레이터가 아닌 디바이스에서만 발생됨
+    setTimeout(function() { confirmClose(); }, 1);
+}
+
+function confirmClose() {
+    var result = confirm("창을 닫으시겠습니까?");
+    if (result == true) {
+        // Do something...
+        oneapp.close();
+    }
+}
+
+</script>
+<!-- onload 호출 방식 -->
+<body onload="viewDidLoad();">
+<!-- 클라이언트 호출 방식 -->
+<!--<body>-->
+    테스트 페이지가 로드되었습니다.
+</body>
+</html>

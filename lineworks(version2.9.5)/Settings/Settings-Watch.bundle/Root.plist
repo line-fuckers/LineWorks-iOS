@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Group</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>초기화면</string>
+			<key>Key</key>
+			<string>screen_preference</string>
+			<key>DefaultValue</key>
+			<string>screen_list</string>
+			<key>Titles</key>
+			<array>
+				<string>메인 메뉴</string>
+				<string>메일</string>
+				<string>캘린더</string>
+				<string>메시지</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>screen_list</string>
+				<string>screen_mail</string>
+				<string>screen_cal</string>
+				<string>screen_message</string>
+			</array>
+		</dict>
+	</array>
+	<key>ApplicationGroupContainerIdentifier</key>
+	<string>group.com.gworks-dev.ncs-apps</string>
+</dict>
+</plist>

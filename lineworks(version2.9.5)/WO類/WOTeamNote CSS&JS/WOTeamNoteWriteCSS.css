@@ -1,0 +1,6 @@
+
+body,span,div, p {
+    word-break: break-word;
+}
+
+img { max-width: 100%; }

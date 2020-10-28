@@ -1,0 +1,22 @@
+{
+    "aps": {
+        "alert": {
+            "loc-key": "REV_CAL_SCHD_REMIND_T",
+            "loc-args": ["한국 가는날1111", "2015년 5월 31일22222"]
+        },
+        "category": "cat_calendar"
+    },
+
+    "WatchKit Simulator Actions": [
+        {
+            "title": "Read",
+            "identifier": "actionRead"
+        },
+        {
+            "title": "Wrtie",
+            "identifier": "actionWrite"
+        }
+    ],
+    
+    "customKey": "test."
+}

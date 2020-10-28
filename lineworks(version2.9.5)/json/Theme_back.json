@@ -1,0 +1,401 @@
+{
+    "domains": [
+        {
+            
+            "domainId": "1000",
+            "domainName": "OneApp Default",
+            "version": 1,
+            "isDefault": true,
+                
+            "rule.navigationbar.line": {
+                "background.color": "#F5F5F5"
+            },
+
+            "rule.tabbar": {
+                "background.color": "#F5F5F5"
+            },
+
+            "rule.navigationbar": {
+                "background.color": "#F5F5F5"
+            },
+            
+            "rule.segmentview": {
+                "text.color": {
+                    "normal": "#ACACAC",
+                    "selected": "#222222"
+                },
+                "background.color": "#F5F5F5"
+            },
+
+            "rule.common": {
+                "text.color": "#666666",
+                "background.color": "#FFFFFF"
+            }
+
+        },
+        {
+                
+            "domainId": "1100",
+            "domainName": "BANDAI",
+            "version": 1,
+            "isDefault": false,
+            
+            "rule.navigationbar": {
+                "background.color.lightness": 85,
+                "background.color": "#FD0D1B",
+            },
+                
+            "rule.navigationbar.line": {
+                "background.color.lightness": 80,
+                "background.color": "#FD0D1B"
+            },
+            
+            "rule.tabbar": {
+                "background.color.lightness": 98,
+                "background.color": "#FD0D1B",
+                "image.color": {
+                    "normal": "#FD0D1B",
+                    "selected": "#FD0D1B"
+                },
+                "image.color.lightness": {
+                    "normal": 30,
+                    "selected": 10
+                },
+                "image.color.saturation": {
+                    "normal": 75,
+                    "selected": -10
+                },
+           },
+
+            "rule.segmentview": {
+                "background.color.lightness": 85,
+                "background.color": "#FD0D1B",
+            },
+
+            "rule.common": {
+                "text.color": "#666666",
+                "background.color": "#FFFFFF"
+            }
+
+        },
+        {
+                
+            "domainId": "1200",
+            "domainName": "SOFT BANK",
+            "version": 1,
+            "isDefault": false,
+            
+            "rule.navigationbar": {
+                "background.color.lightness": 85,
+                "background.color": "#ABB0B3",
+            },
+                
+            "rule.navigationbar.line": {
+                "background.color.lightness": 80,
+                "background.color": "#ABB0B3"
+            },
+            
+            "rule.tabbar": {
+                "background.color.lightness": 98,
+                "background.color": "#ABB0B3",
+                "image.color": {
+                    "normal": "#ABB0B3",
+                    "selected": "#ABB0B3"
+                },
+                "image.color.lightness": {
+                    "normal": 30,
+                    "selected": 10
+                },
+
+                "image.color.saturation": {
+                    "normal": 75,
+                    "selected": -10
+                },
+           },
+
+            "rule.segmentview": {
+                "background.color.lightness": 85,
+                "background.color": "#ABB0B3",
+            },
+
+            "rule.common": {
+                "text.color": "#666666",
+                "background.color": "#FFFFFF"
+            }
+
+        },
+        {
+                
+            "domainId": "1300",
+            "domainName": "ITOCHU",
+            "version": 1,
+            "isDefault": false,
+            
+            "rule.navigationbar": {
+                "background.color.lightness": 85,
+                "background.color": "#134A9C",
+            },
+                
+            "rule.navigationbar.line": {
+                "background.color.lightness": 80,
+                "background.color": "#134A9C"
+            },
+            
+            "rule.tabbar": {
+                "background.color.lightness": 98,
+                "background.color": "#134A9C",
+                "image.color": {
+                    "normal": "#134A9C",
+                    "selected": "#134A9C"
+                },
+                "image.color.lightness": {
+                    "normal": 30,
+                    "selected": 10
+                },
+
+                "image.color.saturation": {
+                    "normal": 75,
+                    "selected": -10
+                },
+           },
+
+            "rule.segmentview": {
+                "background.color.lightness": 85,
+                "background.color": "#134A9C",
+            },
+
+            "rule.common": {
+                "text.color": "#666666",
+                "background.color": "#FFFFFF"
+            }
+
+        },
+        {
+                
+            "domainId": "1400",
+            "domainName": "NAVER",
+            "version": 1,
+            "isDefault": false,
+            
+            "rule.navigationbar": {
+                "background.color": "#1DBE00",
+            },
+                
+            "rule.navigationbar.line": {
+                "background.color": "#1DBE00"
+            },
+            
+            "rule.tabbar": {
+                "background.color": "#FFFFFF",
+                "image.color": {
+                    "normal": "#1DBE00",
+                    "selected": "#1DBE00"
+                },
+                "image.color.lightness": {
+                    "normal": 30,
+                    "selected": 10
+                },
+
+                "image.color.saturation": {
+                    "normal": 75,
+                    "selected": -10
+                },
+           },
+
+            "rule.segmentview": {
+                "background.color.lightness": 85,
+                "background.color": "#1DBE00",
+            },
+
+            "rule.common": {
+                "text.color": "#666666",
+                "background.color": "#FFFFFF"
+            }
+
+        },
+        {
+                
+            "domainId": "1500",
+            "domainName": "TV ASAHI",
+            "version": 1,
+            "isDefault": false,
+            
+            "rule.navigationbar": {
+                "background.color.lightness": 85,
+                "background.color": "#F4007A",
+            },
+                
+            "rule.navigationbar.line": {
+                "background.color.lightness": 80,
+                "background.color": "#F4007A"
+            },
+            
+            "rule.tabbar": {
+                "background.color.lightness": 98,
+                "background.color": "#F4007A",
+                "image.color": {
+                    "normal": "#F4007A",
+                    "selected": "#F4007A"
+                },
+                "image.color.lightness": {
+                    "normal": 30,
+                    "selected": 10
+                },
+
+                "image.color.saturation": {
+                    "normal": 75,
+                    "selected": -10
+                },
+           },
+
+            "rule.segmentview": {
+                "background.color.lightness": 85,
+                "background.color": "#F4007A",
+            },
+
+            "rule.common": {
+                "text.color": "#666666",
+                "background.color": "#FFFFFF"
+            }
+
+        },
+        {
+                
+            "domainId": "1600",
+            "domainName": "LG",
+            "version": 1,
+            "isDefault": false,
+            
+            "rule.navigationbar": {
+                "background.color.lightness": 85,
+                "background.color": "#A21839",
+            },
+                
+            "rule.navigationbar.line": {
+                "background.color.lightness": 80,
+                "background.color": "#A21839"
+            },
+            
+            "rule.tabbar": {
+                "background.color.lightness": 98,
+                "background.color": "#A21839",
+                "image.color": {
+                    "normal": "#A21839",
+                    "selected": "#A21839"
+                },
+                "image.color.lightness": {
+                    "normal": 30,
+                    "selected": 10
+                },
+
+                "image.color.saturation": {
+                    "normal": 75,
+                    "selected": -10
+                },
+           },
+
+            "rule.segmentview": {
+                "background.color.lightness": 85,
+                "background.color": "#A21839",
+            },
+
+            "rule.common": {
+                "text.color": "#666666",
+                "background.color": "#FFFFFF"
+            }
+
+        },
+        {
+                
+            "domainId": "1700",
+            "domainName": "WoongJin",
+            "version": 1,
+            "isDefault": false,
+            
+            "rule.navigationbar": {
+                "background.color.lightness": 85,
+                "background.color": "#F59D00",
+            },
+                
+            "rule.navigationbar.line": {
+                "background.color.lightness": 80,
+                "background.color": "#F59D00"
+            },
+            
+            "rule.tabbar": {
+                "background.color.lightness": 98,
+                "background.color": "#F59D00",
+                "image.color": {
+                    "normal": "#F59D00",
+                    "selected": "#F59D00"
+                },
+                "image.color.lightness": {
+                    "normal": 30,
+                    "selected": 10
+                },
+
+                "image.color.saturation": {
+                    "normal": 75,
+                    "selected": -10
+                },
+           },
+
+            "rule.segmentview": {
+                "background.color.lightness": 85,
+                "background.color": "#F59D00",
+            },
+
+            "rule.common": {
+                "text.color": "#666666",
+                "background.color": "#FFFFFF"
+            }
+
+        },
+        {
+                
+            "domainId": "1800",
+            "domainName": "SONY",
+            "version": 1,
+            "isDefault": false,
+            
+            "rule.navigationbar": {
+                "background.color.lightness": 85,
+                "background.color": "#222222",
+            },
+                
+            "rule.navigationbar.line": {
+                "background.color.lightness": 80,
+                "background.color": "#222222"
+            },
+            
+            "rule.tabbar": {
+                "background.color.lightness": 98,
+                "background.color": "#222222",
+                "image.color": {
+                    "normal": "#222222",
+                    "selected": "#222222"
+                },
+                "image.color.lightness": {
+                    "normal": 30,
+                    "selected": 10
+                },
+
+                "image.color.saturation": {
+                    "normal": 75,
+                    "selected": -10
+                },
+           },
+
+            "rule.segmentview": {
+                "background.color.lightness": 85,
+                "background.color": "#222222",
+            },
+
+            "rule.common": {
+                "text.color": "#666666",
+                "background.color": "#FFFFFF"
+            }
+
+        },
+    ]
+}

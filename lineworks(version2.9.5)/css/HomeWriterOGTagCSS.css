@@ -1,0 +1,369 @@
+@charset "UTF-8";
+.open_graph .og_image .ico_play:before, .url .thmb .ico_play:before, .video_internal.edit_mode:before, .bd_write.view_type .video_internal.not_supported .infor .ico_block {
+    background-image: url(https://static.worksmobile.net/static/m/wm/home/sp_lw_home_52ad9208.png);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), url(https://static.worksmobile.net/static/m/wm/home/sp_lw_home_2a6c351e.svg);
+    background-image: -webkit-linear-gradient(transparent, transparent), url(https://static.worksmobile.net/static/m/wm/home/sp_lw_home_2a6c351e.svg);
+    background-image: linear-gradient(transparent, transparent), url(https://static.worksmobile.net/static/m/wm/home/sp_lw_home_2a6c351e.svg);
+    -webkit-background-size: 592px 576px;
+            background-size: 592px 576px;
+}
+
+div, p {
+    margin: 0;
+    padding: 0;
+}
+
+.open_graph {
+    position: relative;
+    display: block;
+    height: 100px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 10px 0;
+    border: 1px solid #e5e5e6;
+    color: #222;
+    white-space: normal;
+    word-break: break-all;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently not supported by any browser */
+}
+
+.open_graph .og_del {
+    display: none;
+}
+
+.open_graph .og_image {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    z-index: 5;
+    width: 100px;
+    height: 100px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: #fff;
+    margin: auto;
+    overflow: hidden;
+}
+
+.open_graph .og_image a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.open_graph .og_image img {
+    position: absolute;
+    top: 50%;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.open_graph .og_image:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.open_graph .og_image .ico_play {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.open_graph .og_image .ico_play:before {
+    display: inline-block;
+    content: '';
+    background-position: -460px -84px;
+    width: 30px;
+    height: 30px;
+    margin: 35px;
+}
+
+.open_graph .og_txt_box {
+    position: relative;
+    display: block;
+    height: 100%;
+    padding: 12px 11px 22px 112px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.open_graph .og_txt_box .og_title {
+    display: block;
+    margin-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #222 !important;
+    text-decoration: none !important;
+}
+
+.open_graph .og_txt_box .og_title a {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.open_graph .og_txt_box .og_description {
+    display: block;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    /* autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+    max-height: 32px;
+    font-size: 12px;
+    color: #767676 !important;
+    text-decoration: none !important;
+    line-height: 1.3;
+}
+
+.open_graph .og_txt_box .og_description a {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.open_graph .og_txt_box .og_url {
+    position: absolute;
+    left: 112px;
+    right: 14px;
+    bottom: 10px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    color: #767676 !important;
+    text-decoration: none !important;
+    line-height: 1.18;
+}
+
+.open_graph .og_txt_box .og_url a {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.open_graph .og_txt_box:first-child {
+    padding-left: 13px;
+}
+
+.open_graph .og_txt_box:first-child .og_url {
+    left: 13px;
+}
+
+.open_graph.empty_img .og_image {
+    display: none;
+}
+
+.url {
+    position: relative;
+    display: block;
+    height: 100px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 14px 0;
+    border: 1px solid #e5e5e6;
+    color: #222;
+    white-space: normal;
+    word-break: break-all;
+}
+
+.url a {
+    display: block;
+    height: 100%;
+    color: #222;
+    text-decoration: none !important;
+}
+
+.url a:hover, .url a:active, .url a:focus {
+    text-decoration: none !important;
+}
+
+.url .thmb {
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    z-index: 5;
+    width: 100px;
+    height: 100px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: #fff;
+    margin: auto;
+    overflow: hidden;
+}
+
+.url .thmb img {
+    position: absolute;
+    top: 50%;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.url .thmb:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.url .thmb .ico_play {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.url .thmb .ico_play:before {
+    display: inline-block;
+    content: '';
+    background-position: -460px -84px;
+    width: 30px;
+    height: 30px;
+    margin: 35px;
+}
+
+.url .dsc {
+    position: relative;
+    display: block;
+    height: 100%;
+    padding: 12px 11px 22px 112px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.url .dsc .tit {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    font-size: 14px;
+    color: #222 !important;
+    margin: 0 0 4px;
+    font-weight: bold;
+    font-style: normal !important;
+    padding: 0;
+    border: 0;
+}
+
+.url .dsc .txt {
+    display: block;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    /* autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+    max-height: 32px;
+    font-size: 12px;
+    color: #767676 !important;
+    line-height: 1.3;
+}
+
+.url .dsc .lk {
+    position: absolute;
+    left: 112px;
+    right: 14px;
+    bottom: 10px;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    color: #767676 !important;
+    line-height: 1.18;
+}
+
+.url .dsc:first-child {
+    padding-left: 13px;
+}
+
+.url .dsc:first-child .lk {
+    left: 13px;
+}
+
+.url .btn_del {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.open_graph,
+.url {
+    max-width: 600px;
+}
+
+.url em {
+    font-style: normal;
+}
+
+.readwrap .open_graph .og_txt_box .og_title,
+.readwrap .open_graph .og_txt_box .og_title span {
+    font-size: 14px !important;
+}
+
+.readwrap .open_graph .og_txt_box .og_description,
+.readwrap .open_graph .og_txt_box .og_url {
+    font-size: 12px !important;
+}
+
+.readwrap .url .dsc .tit,
+.readwrap .url .dsc .tit span {
+    font-size: 14px !important;
+}
+
+.readwrap .url .dsc .txt,
+.readwrap .url .dsc .lk {
+    font-size: 12px !important;
+}

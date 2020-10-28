@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SinfPaths</key>
+	<array>
+		<string>SC_Info/LineWorks.sinf</string>
+	</array>
+	<key>SinfReplicationPaths</key>
+	<array>
+		<string>PlugIns/LINE WORKS Notification Serivce Extension.appex/SC_Info/LINE WORKS Notification Serivce Extension.sinf</string>
+		<string>PlugIns/Works Share Extension.appex/SC_Info/Works Share Extension.sinf</string>
+		<string>SC_Info/LineWorks.sinf</string>
+	</array>
+</dict>
+</plist>

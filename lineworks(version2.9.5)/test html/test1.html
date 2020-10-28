@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>테스트 페이지</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<script type="text/javascript">
+    
+function viewDidLoad() {
+    // 웹페이지 로드에서 호출하는 경우
+    // 인터페이스가 정상적으로 생성되어 있지 않기 때문에 지연 호출을 하여야 한다.
+    setTimeout(function() { request(); }, 100);
+}
+
+function request() {
+    oneapp.requestFeatures('hardwareBackKey,toolbarClose');
+}
+
+function toolbarCloseButtonPressed() {
+    setTimeout(function() { alert('인터셉트를 호출하지 않습니다.'); }, 1);
+}
+
+</script>
+<!-- onload 호출 방식 -->
+<body onload="viewDidLoad();">
+    테스트 페이지가 로드되었습니다.
+</body>
+</html>

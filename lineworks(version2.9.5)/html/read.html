@@ -1,0 +1,194 @@
+<html>
+    <head>
+        <style>
+            body {
+                -webkit-text-size-adjust: 100%;
+                /*-webkit-user-select: none;*/
+                /*-webkit-touch-callout: none;*/
+            }
+        
+            body,span,div, p {
+                word-break: normal;
+                word-wrap: break-word;
+                line-height : 160%;
+            }
+        
+            body, button, fieldset, form, input, legend, menu, p, select, table, td, textarea, th {
+                margin : 0;
+                padding : 0;
+            }
+        
+            table {
+                font-size: 14px;
+                /*$&tableMarginZeroCSS&$*/
+            }
+        
+            .mailBody {
+                font-size:10pt;
+                font-family:'Helvetica Neue';
+                color:#3C3C3C;
+                margin-top:7px;
+                margin-left:15px;
+                margin-right:15px;
+            }
+        
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            
+            a { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+        </style>
+        
+        <script type="text/javascript">
+            var scheme = "callback://";
+            
+            document.addEventListener("DOMContentLoaded", function(event) {
+                                      
+                                      // 이미지에 링크를 위한 Map을 사용한 경우, max-width를 적용하게 되면 링크 위치가 어긋난다
+                                      // 따라서 useMap을 사용중인 이미지의 경우 max-width 설정을 강제로 적용하지 않는다
+                                      var images = document.images;
+                                      for (var i = 0; i < images.length; i++) {
+                                          if (images[i].useMap.length > 0) {
+                                              images[i].style.maxWidth = "inherit";
+                                          }
+                                      }
+                                      
+                                      // 화면 폭맞춤용 스크립트 수행을 위한 replace용 주석
+                                      /**$%setViewportToFit%$**/
+                                      
+                                      callbackWebView("DOMContentLoaded", "")
+                                      });
+            
+            function resizeFont(fontSize) {
+                var percentage = fontSize + '\%'
+                document.getElementById('mailContent').style.webkitTextSizeAdjust = percentage
+            }
+        
+            // iPhone App으로 현재 상태를 전달해 준다.
+            function callbackWebView(command, query) {
+                window.location = scheme + command + "?" + query;
+            }
+        
+        function setViewportToFit() {
+            var documentWidth = getMaxElementWidth();
+            var screenWidth = screen.width;
+            var maxWidth = screenWidth * 2;
+            
+            var viewportWidth;
+            var maximumScale;
+            if (documentWidth <= screenWidth) {
+                // document의 widhth가 화면보다 작거나 같을 경우 현재상태(width=device-width) 유지
+                return;
+            }
+            
+            if (documentWidth > maxWidth) {
+                viewportWidth = maxWidth;
+            } else {
+                viewportWidth = documentWidth + 30; // 30은 좌우 마진
+            }
+            
+            viewport = document.querySelector("meta[name=viewport]");
+            viewport.setAttribute('content', 'maximum-scale=2, minimum-scale=0.1, ' + 'width=' + viewportWidth);
+        }
+        
+        // 지정한 element의 max-width 구하기
+        function getMaxElementWidth() {
+            var max = document.body.offsetWidth;
+            max = getMaxTagWidth('table', max);
+            max = getMaxTagWidth('div', max);
+            return max;
+        }
+        
+        // element의 max-width 구하기
+        function getMaxTagWidth(tagName, max) {
+            var elements = document.getElementsByTagName(tagName);
+            for (var i = 0 ; i < elements.length ; ++i) {
+                if (max < elements[i].offsetWidth) {
+                    max = elements[i].offsetWidth;
+                }
+            }
+            return max;
+        }
+        
+        // viewport의 content변경하기
+        function updateViewPortContent(content) {
+            var metaViewport = document.getElementById('meta-viewport');
+            metaViewport.setAttribute('content', content);
+        }
+        
+        // Selection을 없애서 복사를 못하도록 한다.
+        function blockCopy() {
+            document.addEventListener("selectionchange", function() {
+                                      console.log('Selection changed.');
+                                      
+                                      var sel = window.getSelection();
+                                      if (sel.rangeCount == 0) {
+                                        return;
+                                      }
+                                      
+                                      sel.removeAllRanges();
+                                });
+        }
+        
+        </script>
+
+        <meta name="viewport" id="meta-viewport" content="<1@*(viewport)*@1>"/>
+    </head>
+    <body class="mailBody" id="mailBody">
+        <div id='mailContent' style="-webkit-text-size-adjust: <1@*(size)*@1>%;">
+            <!--body-->
+        </div>
+    </body>
+    
+    <!--datadetector-->
+    
+    <!--blockCopy-->
+
+
+     <script type="text/javascript">
+         // 번역 완료 후 콜백
+         function transCallback(e) {
+             callbackWebView("transCompleted", "");
+         }
+
+         function isTranslationScriptLoaded() {
+             if (mrTranslate != null) {
+                 return "loaded";
+             }
+         }
+     
+         function runTranslation(from, to) {
+             translateOptions = {
+                 className : "mailBody",
+                 source : from,
+                 target : to,
+                 callback : "transCallback"
+             };
+             mrTranslate.translate(translateOptions);
+         }
+     
+         var translateOptions = {
+             className : "mailBody",       // 클래스 명 (ex. class="readBody" 인경우 "readBody" 기입), 복수의 클래스 가능
+             source : "",          // 소스 언어 코드 (ko / en / ja / zh_CN / zh_TW)
+             target : "",          // 타겟 언어 코드 (ko / en / ja / zh_CN / zh_TW)
+             callback : ""         // 콜백 함수명
+         };
+     
+         function loadTranslationScript() {
+             var n = document.createElement('script');
+             n.id = 'mailTranslator';
+             n.charset='utf-8';
+             n.setAttribute('src', '(script_url_4e@r!dzw)'
+             + '?className=' + translateOptions['className']
+             + '&source=' + translateOptions['source']
+             + '&target=' + translateOptions['target']
+             + '&callback=' + translateOptions['callback']
+             + '&'+ Date.parse(new Date));
+         
+             document.body.appendChild(n);
+         }
+     </script>
+    
+    
+</html>

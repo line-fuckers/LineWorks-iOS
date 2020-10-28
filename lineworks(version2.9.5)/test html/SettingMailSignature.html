@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <style>
+            body {
+                -webkit-text-size-adjust: 100%;
+            }
+        
+            body,span,div, p {
+                word-break: normal;
+                word-wrap: break-word;
+                line-height : 160%;
+            }
+        
+            #lw-mail-signature-content {
+                font-size:10pt;
+                font-family:'Helvetica Neue';
+                color:#3C3C3C;
+                margin:15px;
+                min-height:100%;
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+            }
+            
+            a { -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+            
+            :focus {
+                outline:0 !important;
+            }
+            
+        </style>
+        
+        <script type="text/javascript">
+            document.addEventListener("keydown", function(event) {
+                window.webkit.messageHandlers.contentsChanged.postMessage(null);
+            });
+            
+            document.addEventListener("paste", function(event) {
+                window.webkit.messageHandlers.contentsChanged.postMessage(null);
+            });
+            
+            document.addEventListener("cut", function(event) {
+                window.webkit.messageHandlers.contentsChanged.postMessage(null);
+            });
+            
+            document.addEventListener("selectionchange", function(event) {
+                setTimeout(function() {
+                    window.webkit.messageHandlers.carotPositionChanged.postMessage(null);
+                }, 200);
+            });
+            
+            function getContents() {
+                var element = document.getElementById("lw-mail-signature-content");
+                return element.innerHTML;
+            }
+        
+            function hideKeyboard() {
+                document.getElementById("lw-mail-signature-content").blur();
+            }
+        
+        </script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    </head>
+    <body>
+        <div id="lw-mail-signature-content" contenteditable="true" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="off">
+            <!--#@#-LWSignigureContent-#@#-->
+        </div>
+    </body>
+</html>
+

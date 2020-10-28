@@ -1,0 +1,103 @@
+{
+    "domains": [
+        {
+            
+            "domainId": "1000",
+            "domainName": "OneApp Default",
+            "version": 1,
+            "isDefault": true,
+                
+            "rule.navigationbar.line": {
+                "background.color": "#F5F5F5"
+            },
+
+            "rule.tabbar": {
+                "background.color": "#F5F5F5"
+            },
+
+            "rule.navigationbar": {
+                "background.color": "#F5F5F5"
+            },
+            
+            "rule.segmentview": {
+                "text.color": {
+                    "normal": "#ACACAC",
+                    "selected": "#222222"
+                },
+                "background.color": "#F5F5F5"
+            },
+
+            "rule.common": {
+                "text.color": "#666666",
+                "background.color": "#FFFFFF"
+            }
+
+        },
+        {
+            "domainId": "1100",
+            "domainName": "SEVER COLOR",
+            "version": 1,
+            "isDefault": false,
+
+            "color.options": {
+                "primary":"#35B21E",
+                "secondary":"#157EFB"
+            },
+                
+            "color.options.text": {
+                "primary":"#FFFFFF",
+                "secondary":"#FFFFFF"
+             },
+                
+            "rule.navigationbar": {
+                "color.option":"primary",
+                "background.color.lightness": 160,
+                "background.color": "#F5F5F5",
+            },
+                
+            "rule.navigationbar.line": {
+                "color.option":"primary",
+                "background.color.lightness": 135,
+                "background.color": "#F5F5F5"
+            },
+            
+            "rule.tabbar": {
+                "color.option":"primary",
+                "background.color": "#FFFFFF",
+                "image.color": {
+                    "normal": "#F5F5F5",
+                    "selected": "#F5F5F5"
+                },
+                "image.color.lightness": {
+                    "normal": 110,
+                    "selected": 110
+                },
+                "image.color.saturation": {
+                    "normal": 120,
+                    "selected": 120
+                },
+           },
+
+            "rule.segmentview": {
+                "color.option":"primary",
+                "background.color.lightness": 160,
+                "background.color": "#F5F5F5",
+            },
+
+            "rule.event.views": {
+                "color.option":"secondary",
+                "background.color": "#FB371D",
+                "image.color": {
+                    "normal": "#FB371D",
+                    "selected": "#FB371D"
+                },
+            },
+
+            "rule.common": {
+                "text.color": "#666666",
+                "background.color": "#FFFFFF"
+            }
+
+        }
+    ]
+}
